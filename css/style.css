@@ -1,0 +1,88 @@
+:root{
+    --main--color: #ff9800;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.landing-page{
+    min-height: 100vh;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing-page .overlay{
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.landing-page .header-area{
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    display: flex;
+    padding-top: 20px;
+}
+.landing-page .header-area .logo{
+    width: 20%;
+    padding: 15px;
+    font-weight: bold;
+}
+.landing-page .header-area .links{
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    padding-right: 20px;
+    font-size: 15px;
+    
+}
+.landing-page .header-area .links li{
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.landing-page .header-area .links li a{
+    text-decoration: none;
+    color: #FFF;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.landing-page .header-area .links li a:hover ,
+.landing-page .header-area .links li a.active{
+    color: var(--main--color);
+}
+.landing-page .introduction-text{
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.landing-page .introduction-text h1{
+    font-size: 34px;
+    margin: 0 0 12px;
+    text-transform: capitalize;
+}
+.landing-page .introduction-text h1 span{
+    color: var(--main--color);
+}
+.landing-page .introduction-text p{
+    line-height: 1.6;
+    font-size: 20px;
+}
